@@ -1,0 +1,20 @@
+﻿@model Book
+
+<div class="card m-2">
+    <div class="card-body">
+        <h5 class="card-title">
+            @Model.Title
+            <span class="badge rounded-pill bg-primary text-white ms-2">$@Model.Price.ToString("0.00")</span>
+        </h5>
+        <h6 class="card-subtitle mb-2 text-muted">Author: @Model.Author</h6>
+        <div class="card-text">
+            <ul class="list-unstyled">
+                <li><span class="fw-normal">@Model.Classification</span></li>
+                <li><span class="fw-normal">@Model.Category</span></li>
+                <li><span class="fw-normal">@Model.PageCount</span> pages</li>
+                <li>Published by <span class="fw-normal">@Model.Publisher</span></li>
+                <li>ISBN: <span class="fw-normal">@Model.Isbn</span></li>
+            </ul>
+        </div>
+    </div>
+</div>
